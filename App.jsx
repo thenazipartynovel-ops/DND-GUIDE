@@ -6,7 +6,7 @@ const {
 /* ═══════════════════════════════════════════════════════════════
    ⚔️  THE WAR TABLE  v6.0  —  World-Class Edition
    🔥  Firebase Realtime Database  (live multi-device sync)
-   🔑  DM Password: dungeonmaster2024  (SHA-256 + XOR masked)
+   🔑  DM Password: secret
    💰  Multi-currency: Copper · Silver · Gold · Platinum
    📊  Stats: STR · CON · DEX · AGI · CHA  (base + bonus)
 ═══════════════════════════════════════════════════════════════ */
@@ -22,9 +22,7 @@ const FB_CFG = {
   appId:"1:1057300769702:web:e16e5d6e6551eb3982fd67",
 };
 
-// ── 🔐 Password security — SHA-256 + XOR obfuscation ────────
-// The 32 hash bytes of "dungeonmaster2024" are XORed with _vk
-// and disguised as animation timing config. No plaintext exists.
+
 const _vk = [71,13,29,47,83,11,37,59];
 const _tc = {
   motionA:{ x:[142,119,22,56],  y:[194,200,153,227] },
